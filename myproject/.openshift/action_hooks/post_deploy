@@ -1,0 +1,49 @@
+#!/usr/bin/env php
+<?php
+    $host = getenv('OPENSHIFT_MYSQL_DB_HOST');
+	$port = getenv('OPENSHIFT_MYSQL_DB_PORT');
+	$user = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
+	$pass = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
+	$db   = getenv('OPENSHIFT_APP_NAME');
+	
+	$repo = rtrim(getenv('OPENSHIFT_REPO_DIR'),'/');
+    $data = rtrim(getenv('OPENSHIFT_DATA_DIR'),'/');
+	$openshift = $repo.'/.openshift';
+	
+	$cmd = function($cmd) use($repo) {
+		passthru("cd $repo && php $repo/vendor/anahita/anahita/bin/anahita $cmd");
+	};
+	
+	passthru("cd $repo && php $repo/bin/composer install");
+	
+	// Check if the installer has run before
+	if(file_exists($data.'/configuration.php')) {
+		// create a symlink so anahita can find it
+		passthru("ln -s $data/configuration.php $repo/www");
+		// if so, just link everything together
+		$cmd("site:symlink");
+	} else {
+		// if not, initiate the site
+		$init = "site:init -n --database-name=$db --database-user=$user --database-password=$pass --database-port=$port --database-host=$host";
+		$cmd($init);
+		// move the config file to the data folder for long term storage
+		passthru("mv $repo/www/configuration.php $data");
+		// create a symlink so anahita can find it
+		passthru("ln -s $data/configuration.php $repo/www");
+		// make the assets folders
+		passthru("mkdir $data/assets");
+	}
+	
+	// create a symlink between the asset folders
+	passthru("ln -s $data/assets $repo/www/assets");
+	
+	// install apps listed in the .openshift/apps file
+	if(file_exists($openshift.'/apps.txt')) {
+		$apps = file_get_contents($openshift.'/apps.txt');
+		passthru('Installing apps...');
+		$cmd("package:install $apps");
+	}
+	
+	// run any migrations
+	$cmd("db:migrate:up");
+?>

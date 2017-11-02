@@ -1,0 +1,10 @@
+{
+    "name" : "anahita/project",
+    "type" : "project",  
+    "license": "GPL-3.0",
+    "require": {
+        "php": ">=5.6",
+        "anahita/anahita": "4.3.*"
+    },
+    "minimum-stability": "stable"
+}

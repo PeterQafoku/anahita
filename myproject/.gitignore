@@ -1,0 +1,11 @@
+S generated files #
+######################
+.*
+!.gitignore
+!.openshift
+anahita
+www/*
+!www/.gitignore
+config/development.yaml
+vendor/*
+
