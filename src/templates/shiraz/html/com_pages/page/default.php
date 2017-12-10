@@ -14,7 +14,7 @@
 
 			<p>
 				<a class="btn btn-primary" href="http://www.sparqedu.com/" target="_blank">
-					sparqedu.com
+					SparqEdu
 				</a>
 
 				<a title="Twitter" class="btn btn-twitter" href="https://www.twitter.com/anahitapolis" target="_blank">
