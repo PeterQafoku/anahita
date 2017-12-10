@@ -94,7 +94,7 @@
       {
           "name": "brandName",
           "type": "text",
-          "default": "Anahita",
+          "default": " ",
           "label": "Brand Name",
           "description": "Enter the name of your brand"
       },
