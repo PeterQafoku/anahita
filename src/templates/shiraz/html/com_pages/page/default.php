@@ -8,7 +8,7 @@
 		<div class="hero-unit text-center">
 			<img src="https://s3-us-west-2.amazonaws.com/sparqedu.com/sparq_logo.png" alt="Inspiration Powered by Connection" /> 
 
-			// <h1>SparqEdu</h1>
+			
 
 			<p class="lead">- Inspiration Powered by Connection -</p>
 
