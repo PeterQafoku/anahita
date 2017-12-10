@@ -98,8 +98,7 @@
 
 //@btnInfoBackground:                 #5bc0de;
 //@btnInfoBackgroundHighlight:        #2f96b4;
-@btnInfoBackground:                 lighten(@sparqBlue,21%);
-@btnInfoBackgroundHighlight:        @sparqBlue;
+
 
 @btnSuccessBackground:              #62c462;
 @btnSuccessBackgroundHighlight:     #51a351;
@@ -250,7 +249,7 @@
 @successBorder:           darken(spin(@successBackground, -10), 5%);
 
 @infoText:                #3a87ad;
-@infoBackground:          #d9edf7;
+@infoBackground:          lighten(@sparqBlue,21%);;
 @infoBorder:              darken(spin(@infoBackground, -10), 7%);
 
 
@@ -261,7 +260,7 @@
 @tooltipArrowWidth:       5px;
 @tooltipArrowColor:       @tooltipBackground;
 
-@popoverBackground:       #fff;
+@popoverBackground:       @sparqWhite;
 @popoverArrowWidth:       10px;
 @popoverArrowColor:       #fff;
 @popoverTitleBackground:  darken(@popoverBackground, 3%);
