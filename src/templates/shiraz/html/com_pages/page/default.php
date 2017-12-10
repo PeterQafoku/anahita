@@ -6,7 +6,7 @@
 <div class="row">
 	<div class="span8 offset2">
 		<div class="hero-unit text-center">
-			<img src="images/sparq_logo.png" alt="Inspiration Powered by Connection" /> 
+			<img src="https://s3-us-west-2.amazonaws.com/sparqedu.com/sparq_logo.png" alt="Inspiration Powered by Connection" /> 
 
 			<h1>SparqEdu</h1>
 
