@@ -6,7 +6,7 @@
 <div class="row">
 	<div class="span8 offset2">
 		<div class="hero-unit text-center">
-			<img src="src/templates/shiraz/css/style2/images/sparq_logo.png" alt="Inspiration Powered by Connection" /> 
+			<img src="images/sparq_logo.png" alt="Inspiration Powered by Connection" /> 
 
 			<h1>SparqEdu</h1>
 
