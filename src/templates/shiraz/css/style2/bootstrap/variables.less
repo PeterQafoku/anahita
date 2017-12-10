@@ -94,10 +94,12 @@
 @btnBorder:                         #bbb;
 
 @btnPrimaryBackground:              @linkColor;
-@btnPrimaryBackgroundHighlight:     darken(@btnPrimaryBackground, 10%);
+@btnPrimaryBackgroundHighlight:     lighten(@btnPrimaryBackground, 10%);
 
-@btnInfoBackground:                 #5bc0de;
-@btnInfoBackgroundHighlight:        #2f96b4;
+//@btnInfoBackground:                 #5bc0de;
+//@btnInfoBackgroundHighlight:        #2f96b4;
+@btnInfoBackground:                 lighten(@sparqBlue,21%);
+@btnInfoBackgroundHighlight:        @sparqBlue;
 
 @btnSuccessBackground:              #62c462;
 @btnSuccessBackgroundHighlight:     #51a351;
