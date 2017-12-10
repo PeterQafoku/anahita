@@ -4,7 +4,7 @@
 
 <h3><?= @text('LIB-AN-AVATAR-EDIT') ?></h3>
 
-<p><?= @avatar($item, 'medium', false) ?></p>
+<p><?= @avatar($item, 'medium', true) ?></p>
 
 <p class="lead"><?= sprintf(@text('LIB-AN-AVATAR-SELECT-IMAGE-ON-YOUR-COMPUTER'), $uploadSizeLimit) ?></p>
 
