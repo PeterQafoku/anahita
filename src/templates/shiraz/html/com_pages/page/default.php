@@ -8,12 +8,12 @@
 		<div class="hero-unit text-center">
 			<img src="src/templates/shiraz/css/style2/images/sparq_logo.png" alt="Inspiration Powered by Connection" /> 
 
-			<h1>Anahita</h1>
+			<h1>SparqEdu</h1>
 
-			<p class="lead">open source social networking platform</p>
+			<p class="lead">- Inspiration Powered by Connection -</p>
 
 			<p>
-				<a class="btn btn-primary" href="https://http://www.sparqedu.com/" target="_blank">
+				<a class="btn btn-primary" href="http://www.sparqedu.com/" target="_blank">
 					sparqedu.com
 				</a>
 
