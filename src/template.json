@@ -1,13 +1,13 @@
 {
-    "name": "Sparq",
-    "description": "Sparq Basic UI",
-    "version": "0.1.0",
-    "homepage": "https://www.SparqEdu.com",
+    "name": "Shiraz",
+    "description": "Shiraz [ʃiːˈrɒːz] is named after the ancient city of poets, mathematicians, flowers, and wine in south of Persia which dates back to 4000 BCE.",
+    "version": "4.3.0",
+    "homepage": "https://www.GetAnahita.com",
     "authors": [
       {
-        "name": "William Boston",
-        "email": "william.boston@wsu.edu",
-        "homepage": "http://www.william-boston.com"
+        "name": "Rastin Mehr",
+        "email": "rastin@getanahita.com",
+        "homepage": "http://www.GetAnahita.com"
       }
     ],
     "license": "GPLv3",
